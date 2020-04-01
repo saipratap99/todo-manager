@@ -1,0 +1,19 @@
+<main class="updateUser-box">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name" ,placeholder: "Name"%><br>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %><br>
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+    <% end %>
+    <%= f.password_field :password, autocomplete: "new-password",placeholder: "Password(min 6 charecters)" %><br>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "Confirm Password" %><br>
+    <%= f.password_field :current_password, autocomplete: "current-password" , placeholder: "Current Password"%><br>
+    <%= f.submit "Update" %>
+  <% end %>
+  <h3 class="updateUser-cancelAccount">
+    Unhappy? Cancel my account
+    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+  </h3>
+  <%= link_to "Back to Todos", :back %>
+</main>

@@ -1,0 +1,17 @@
+<main class="main-welcomeBody">
+  <main class="loginBox">
+    <%= form_for(resource, as: resource_name,class: "login-form", url: session_path(resource_name)) do |f| %>
+      <p class="login-signUp">New to Cafeteria <%=link_to "Sign Up here",new_user_registration_path,class: "signUp-link" %></p>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "Email" %><br>
+      <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password" %><br>
+      <% if devise_mapping.rememberable? %>
+        <p class="login-showPassword">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </p>
+      <% end %>
+      <%= f.submit "Log in" ,class: "login-button" %>
+      <%= link_to "Forgot your password?", new_user_password_path, class:"forgot-password"%>
+    <% end %>
+  </main>
+</main>

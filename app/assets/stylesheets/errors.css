@@ -1,0 +1,13 @@
+#error_explanation{
+  color: darkred;
+  text-align: center;
+  margin:10px;
+  padding: 10px;
+  background-color: rgba(245, 136, 117, 0.863);
+  border-radius: 10px;
+  border: 2px solid darkred;
+  font-family: sans-serif;
+}
+#error_explanation h2{
+  font-weight: bold;
+}

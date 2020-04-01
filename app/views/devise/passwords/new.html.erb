@@ -1,0 +1,9 @@
+<main class="forgotPassword-box">
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name),class:"forgotPassword-form", html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:"Enter your Email" %>
+    <%= f.submit "Send me reset password instructions" %>
+  <% end %>
+  <%=link_to "Log in",new_user_session_path,class:"login-button"%>
+  <%=link_to "Sign Up",new_user_registration_path,class:"signUp-button"%>
+</main>

@@ -1,0 +1,46 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.home-h2{
+  max-width:  40%;
+  margin: 0 auto;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  color: rgba(13, 12, 15, 0.911);
+
+}
+.get-started{
+  text-align: center;
+  display: block;
+  margin-top:10px;
+  text-decoration: none;
+  background-color: rgb(7, 121, 12);
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.get-started:hover{
+ background-color: rgb(94, 67, 136);
+}
+.img-welcomeLeft{
+
+  padding: 10px;
+  margin-left:40px ;
+}
+.img-welcomeRight{
+  padding: 10px;
+  margin-right:40px ;
+}
+img.img-welcomeCenter{
+display: block;
+padding: 5px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+}

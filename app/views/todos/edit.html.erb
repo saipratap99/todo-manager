@@ -1,0 +1,15 @@
+<main class=todoUpdate-body>
+  <h1 class="updateTodo-title">Update Todo</h1>
+  <%= form_with scope: :todo,method: :patch,url: todo_path,class:"updateTodo-form",local: true do |form| %>
+    <%= form.text_field :todo_text , placeholder: "Edit todo here",class:"updateTodo-text",value: Todo.find(params[:id]).todo_text %>
+    <%= form.date_field :due_date , placeholder: "DD-MM-YYYY" ,class:"updateTodo-date",value:Todo.find(params[:id]).due_date %>
+    <%= form.submit "Update",class:"updateTodo-button" %>
+  <% end %>
+  <%= form_with scope: :todo,method: :patch,url: todo_complete_path, local: true do |form| %>
+    <% if Todo.find(params[:id]).completed %>
+      <%= form.submit "Mark as Incomplete",class:"updateTodo-completeButton"%>
+    <% else %>
+      <%= form.submit "Mark as complete",class:"updateTodo-completeButton"%>
+    <%end%>
+  <%end%>
+</main>

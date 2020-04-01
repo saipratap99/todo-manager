@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoManager</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header class="Header"> Todo Management
+      <%if user_signed_in?%>
+        <span class="header-greetings">Hello <strong><%= current_user.name %></strong></span>
+        <span calss="header-editProfile"><%=link_to "Edit Profile",edit_user_registration_path%></span>
+        <span calss="header-logOut"><%=link_to "Log Out",destroy_user_session_path,method: :delete%></span>
+      <% else %>
+        <span class="header-signIn"> <%=link_to "Sign In",new_user_session_path%></span>
+        <span class="header-signUp" > <%=link_to "Sign Up",new_user_registration_path%></span>
+      <%end%>
+    </header>
+    <%if notice%>
+      <p class="notice"><%= notice %></p>
+    <%end%>
+    <%if alert%>
+      <p class="alert"><%= alert %></p>
+    <%end%>
+    <%= yield %>
+    <footer class="Footer"> &copy; All copyrights are reserved. @Sai Pratap</footer>
+  </body>
+</html>

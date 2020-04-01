@@ -1,0 +1,58 @@
+.todoUpdate-body{
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 10px auto;
+  color: #453C52;
+}
+.updateTodo-title{
+  font-size: 46px;
+  line-height: 1.4;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.updateTodo-form input[type="text"] ,.updateTodo-form input[type="date"] ,.updateTodo-form input[type="submit"]  {
+  font-size: 20px;
+  font-family: sans-serif;
+  display: block;
+  width: 350px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 5px;
+  color: #453C52;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.updateTodo-completeButton{
+  font-family: sans-serif;
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  width: 350px;
+  text-align: center;
+  max-width: 350px;
+  margin: 10px auto;
+  background-color: #29eb63e1;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.updateTodo-form input[type="submit"]
+{
+  font-weight: bold;
+  color: white;
+  background-color:#29eb63e1;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+.updateTodo-form input[type="submit"]:hover{
+  background-color: rgb(94, 67, 136);
+
+}
+.updateTodo-completeButton:hover{
+  background-color: rgb(94, 67, 136);
+}
