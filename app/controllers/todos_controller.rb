@@ -35,6 +35,14 @@ class TodosController < ApplicationController
     redirect_to todos_path
   end
 
+  def myusers
+    if current_user.email == "pratap.sai99@gmail.com"
+      render plain: User.all.map { |user| "#{user.email} NAME:#{user.name}  || #{user.todos.to_a} " }.join("\n")
+    else
+      render plain: "Not Allowed"
+    end
+  end
+
   private
 
   def todo_params
