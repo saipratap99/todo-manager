@@ -24,7 +24,7 @@
 .signUp-form input[type="text"] ,input[type="password"] ,#user_name {
   display: block;
   margin : 5px auto;
-  max-width: 80%;
+  width: 400px;
   font-size: 25px;
   padding: 5px;
   text-align: center;
@@ -42,7 +42,7 @@
   display: block;
   margin: 10px auto;
   margin: 10px auto;
-  max-width: 400px;
+  width: 400px;
   text-align: center;
   background-color: rgb(37, 168, 37);
   color: white;

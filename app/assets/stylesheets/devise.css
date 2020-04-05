@@ -14,23 +14,3 @@
 strong{
  font-weight: bold;
 }
-.nav-menu{
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-.nav-menu > li a{
-  color: white;
-  font-size: 18px;
-  padding: 8px;
-  margin: 5px;
-  text-decoration: none;
-  border-radius: 5px;
-  border: 1px solid white;
-}
-.nav-menu >li a:hover{
-  font-size: 21px;
-}
-.header-greetings{
-  font-size: 21px;
-}

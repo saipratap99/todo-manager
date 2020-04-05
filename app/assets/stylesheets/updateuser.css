@@ -1,7 +1,7 @@
 
 .updateUser-box{
   font-family: sans-serif;
-  max-width: 30%;
+  max-width: 500px;
   margin: 20px auto;
   border: 3px solid transparent;
   border-radius: 20px;
@@ -13,7 +13,7 @@
 .edit_user input[type="email"],input[type="password"]{
   display: block;
   margin : 10px auto;
-  max-width: 80%;
+  width: 400px;
   font-size: 25px;
   padding: 5px;
   text-align: center;
@@ -25,7 +25,7 @@
   display: block;
   margin: 10px auto;
   margin: 20px auto;
-  width: 80%;
+  width: 400px;
   text-align: center;
   background-color: rgb(37, 168, 37);
   color: white;
@@ -45,7 +45,7 @@
   display: block;
   margin: 10px auto;
   margin: 20px auto;
-  width: 80%;
+  width: 400px;
   text-align: center;
   color: white;
   font-weight: bold;
