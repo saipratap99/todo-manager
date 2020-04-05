@@ -1,0 +1,176 @@
+body{
+  font-family: sans-serif;
+}
+.cafeteria-navbar{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 99%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px #0d0f11;
+}
+.cafeteria-navbarHeading{
+  margin: 5px;
+  padding: 5px;
+  color: rgba(34, 33, 33, 0.877);
+  font-weight: bold;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+}
+.cafeteria-navbarHeading img{
+  padding: 5px;
+}
+.cafeteria-navbarAllButtons{
+  display: flex;
+  align-items: center;
+  margin-left:auto ;
+}
+.cafeteria-navbarButton{
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
+.cafeteria-navbarButton > a{
+  text-decoration: none;
+  color: rgba(24, 23, 23, 0.842);
+  font-family: sans-serif;
+  margin-right: 5px;
+  text-align: center;
+  padding: 5px;
+}
+.cafeteria-navbarButton > a:hover{
+  color: rgba(255, 68, 0, 0.904);
+}
+
+
+
+
+
+
+.search-box{
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: orangered;
+  border-radius: 10px;
+}
+.search-box > form{
+  margin: 0 auto;
+}
+.search-box > form input{
+  font-size: 23px;
+  margin: 5px;
+  padding: 5px;
+  border: 0px;
+  text-align: center;
+}
+.search-box > form input[type="submit"],input[type="button"]{
+  background-color: rgba(21, 196, 64, 0.932);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding:5px 10px ;
+  color: white;
+}
+.search-box > form input[type="search"]{
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+
+.addItem-form{
+  width: 70%;
+  margin: 5px auto;
+  display: none;
+}
+.addItem-form form > input{
+  margin: 0 auto;
+}
+
+
+
+
+.menu-menuItems{
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  font-family: sans-serif;
+}
+.cafeteria-menu{
+  width: 25%;
+  margin: 5px;
+  border-right: 2px dotted rgba(197, 194, 194, 0.966);
+
+}
+.menuName{
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.849);
+}
+.menu{
+  margin: 5px;
+  padding: 5px;
+  text-align: right;
+}
+.menu:hover{
+  border: 1px dotted black;
+  border-left: 0px;
+}
+.menu > a{
+  color: rgba(2, 3, 2, 0.877);
+  font-family:   sans-serif;
+  font-weight: bold;
+}
+.menu > a:hover{
+  font-size: 30px;
+  color: orangered;
+}
+.menuItem {
+  height: 65px;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 25px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+.cafeteria-menuItems{
+  width: 75%;
+  margin: 0 auto;
+}
+.menuItems-list{
+  border-bottom: 3px solid black;
+}
+.menuItem > p{
+  padding: 5px;
+}
+.menuItem:hover{
+  background-color: rgb(223, 219, 219);
+  border-radius: 10px;
+}
+
+ .orderItem-add{
+   margin-left: auto;
+   border: 1px solid orangered;
+
+   color: orangered;
+   margin-right: 5px;
+  }
+ .menuItem-price{
+   display: block;
+   padding: 5px;
+   margin: 5px;
+   font-size: 18px;
+   color: rgb(92, 91, 91);
+ }
+ .orderItem-add > a{
+  color: orangered;
+  width: 20px;
+  padding: 5px;
+ }
