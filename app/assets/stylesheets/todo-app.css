@@ -157,7 +157,26 @@ a .TodoSection-todoDelete{
 .TodoSection-todo >a{
   margin-left:auto;
 }
-
+.todos-lable{
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 370px) {
+ .TodoSection{ transform: scale(0.9);}
+ .todosPage-body{ transform: scale(0.9);}
+ .todoAdd-form{transform: scale(0.8);}
+ .Header > h2{font-size: 25px;}
+ .Footer{font-size: 21px;}
+ .Header > p{display: none;}
+ .todoAdd-form #todos_addForm{margin-top: 3px;}
+ .img-welcomeCenter{transform: scale(0.5);}
+ .home-h2{font-size: 21px;}
+ .home-h2 > a{font-size: 15px;}
+ .signUpBox,.loginBox{transform: scale(0.8);}
+ .signUp-form input[type="text"], input[type="password"],input[type="email"],input[type="submit"], #user_name{max-width: 80%;}
+ .signUp-login{font-size: 16px;}
+ .notice,.alert{font-size: 16px;}
+}
 /*Typography scale
 h1-46px
 h2-34px

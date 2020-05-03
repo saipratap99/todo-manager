@@ -16,7 +16,11 @@ class TodosController < ApplicationController
   end
 
   def update
-    Todo.find(params[:id]).update(update_todo)
+    id = params[:id]
+    completed = params[:completed]
+    todo = current_user.todos.find(id)
+    todo.completed = completed
+    todo.save!
     redirect_to todos_path
   end
 
